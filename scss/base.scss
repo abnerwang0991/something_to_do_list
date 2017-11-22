@@ -1,0 +1,45 @@
+@import "reset";
+
+body {
+	font-family: Microsoft JhengHei;
+}
+
+.list {
+	width: 25%;
+	margin: 100px auto;
+	background-color: #eee;
+	padding: 20px 0;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	h1 {
+		margin: 0;
+		padding: 0 0 20px 10px;
+		font-size: 26px;
+	}
+	ul {
+		li {
+			span {
+				float: right;
+				&::after {
+					content: "";
+					clear: both;
+					display: table;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+	form {
+		margin: 30px 0 10px 10px;
+		.form-group {
+			input {
+				width: 280px;
+			}
+		}
+		button {
+			font-family: Microsoft JhengHei;
+		}
+	}
+	p {
+		padding-left: 10px;
+	}
+}
